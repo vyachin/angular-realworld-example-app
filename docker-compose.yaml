@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  node:
+    build: .docker/node
+    working_dir: /var/www
+    ports:
+      - 4200:4200
+    volumes:
+      - .:/var/www
